@@ -15,6 +15,7 @@
                 background-color: #EEEEEE;
                 word-spacing:1px;
                 letter-spacing: 1px;
+                /*color:  #666666;*/
             }
 
             @media screen, print and (max-width: 1080px) {
@@ -29,7 +30,7 @@
             @media screen and (min-width: 1080px) {
                 .container {
                     background-color: #FFFFFF;
-                    width: 60%;
+                    width: 50%;
                     margin: auto;
                     padding: 20px;
                     box-sizing: border-box;
@@ -41,18 +42,38 @@
                 text-align: center;
             }
 
-            table, table tr th, table tr td {
-                border: 1px solid #0094ff;
-                word-break: break-all;
-                word-wrap: break-word;
+            .item{
+                margin: 10px 0;
             }
 
-            table {
-                width: 100%;
-                text-align: center;
-                border-collapse: collapse;
+            .item>span:nth-child(1){
+                font-size: 18px;
+                /*padding-left: 10px;*/
             }
 
+            .item>span:nth-child(1):before{
+                content: "| ";
+                width: 10px;
+                font-weight: bolder;
+                color: red;
+                /*background-color: red;*/
+            }
+
+            .item>span:nth-child(2){
+                position: relative;
+                display: block;
+                float: right;
+            }
+
+            a{
+                text-decoration-line: none;
+            }
+
+            .item>div{
+                text-indent: 2em;
+                /*color:  #666666;*/
+                margin: 10px 0;
+            }
             div.section1 ~ div > p {
                 height: 35px;
                 line-height: 35px;
@@ -99,66 +120,115 @@
             </li>
         </ul>
     </div>
+    
+<!--    <div class="section4">-->
+<!--        <p>我做的主要项目：</p>-->
+<!--        <table>-->
+<!--            <tr>-->
+<!--                <th>分类</th>-->
+<!--                <th>项目名称及概述</th>-->
+<!--                <th>技术说明</th>-->
+<!--                <th>线上地址</th>-->
+<!--                <th>github托管</th>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>前端</td>-->
+<!--                <td>穿云101网站前端。该项目实现的有用户注册、登录，发邮件、重置密码、文章增删改查、css移动端、pc端响应式布局。</td>-->
+<!--                <td>Vue3(vue-router、vuex)、axios(Promise)、css实现移动端和pc端响应式布局</td>-->
+<!--                <td>-->
+<!--                    <a href="https://chuanyun101.com" target="_blank">https://chuanyun101.com</a>-->
+<!--                </td>-->
+<!--                <td><a href="https://github.com/aplot249/" target="_blank">点我访问</a></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>前端</td>-->
+<!--                <td>hyshare网站前端。利用vue3+vant组件库实现移动端界面，呈现文章，视频内容，提交删除评论。</td>-->
+<!--                <td>Vue3(vue-router、vuex)、axios(Promise)、Vant组件库，利用腾讯云cos进行存储视频</td>-->
+<!--                <td>没再线上运行</td>-->
+<!--                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>前端</td>-->
+<!--                <td>签到抽奖界面。这是接的一单私活儿，给人做一个签到抽奖界面。别人提供了psd的图片素材，-->
+<!--                    我做的是利用css实现图片呈现的移动端布局效果，对用户点击按钮绑定响应事件。-->
+<!--                </td>-->
+<!--                <td>css flex布局，移动端布局</td>-->
+<!--                <td>无</td>-->
+<!--                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>前端</td>-->
+<!--                <td>uniapp尝试开发小程序。这是现在正在做的一个项目，实现微信登录，文章、视频增删改查，留言评论功能，使用官方提供的uni-starter、uni-admin结合uniCloud做云端一体开发。-->
+<!--                </td>-->
+<!--                <td>uniapp开发微信小程序、uniCloud云端一体开发</td>-->
+<!--                <td>无</td>-->
+<!--                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>后端</td>-->
+<!--                <td>hyshare网站后端，利用django+restframeworkAPI框架提供接口，实现前后端分离。</td>-->
+<!--                <td>django3、restframework、supervisor进程管理、redis缓存、nginx反向代理，习惯用ubuntu系统，会一些常见的linux命令和bash编程。</td>-->
+<!--                <td>-->
+<!--                    <a href="https://django.chuanyun101.com:9999/article/article/" target="_blank">https://django.chuanyun101.com:9999</a>-->
+<!--                </td>-->
+<!--                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>爬虫</td>-->
+<!--                <td>爬虫毕业设计。这是接的一单私活儿，给某个同学做的爬虫毕业设计。对一些网站用爬虫，实现账号注销功能，用python的tkinter框架实现GUI可视化界面。</td>-->
+<!--                <td>python、多线程、requests爬虫、tkinter实现GUI界面</td>-->
+<!--                <td>无</td>-->
+<!--                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--    </div>-->
+
     <div class="section4">
         <p>我做的主要项目：</p>
-        <table>
-            <tr>
-                <th>分类</th>
-                <th>项目名称及概述</th>
-                <th>技术说明</th>
-                <th>线上地址</th>
-                <th>github托管</th>
-            </tr>
-            <tr>
-                <td>前端</td>
-                <td>穿云101网站前端。该项目实现的有用户注册、登录，发邮件、重置密码、文章增删改查、css移动端、pc端响应式布局。</td>
-                <td>Vue3(vue-router、vuex)、axios(Promise)、css实现移动端和pc端响应式布局</td>
-                <td>
-                    <a href="https://chuanyun101.com" target="_blank">https://chuanyun101.com</a>
-                </td>
-                <td><a href="https://github.com/aplot249/" target="_blank">点我访问</a></td>
-            </tr>
-            <tr>
-                <td>前端</td>
-                <td>hyshare网站前端。利用vue3+vant组件库实现移动端界面，呈现文章，视频内容，提交删除评论。</td>
-                <td>Vue3(vue-router、vuex)、axios(Promise)、Vant组件库，利用腾讯云cos进行存储视频</td>
-                <td>没再线上运行</td>
-                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>
-            </tr>
-            <tr>
-                <td>前端</td>
-                <td>签到抽奖界面。这是接的一单私活儿，给人做一个签到抽奖界面。别人提供了psd的图片素材，
-                    我做的是利用css实现图片呈现的移动端布局效果，对用户点击按钮绑定响应事件。
-                </td>
-                <td>css flex布局，移动端布局</td>
-                <td>无</td>
-                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a</td>
-            </tr>
-            <tr>
-                <td>前端</td>
-                <td>uniapp尝试开发小程序。这是现在正在做的一个项目，实现微信登录，文章、视频增删改查，留言评论功能，使用官方提供的uni-starter、uni-admin结合uniCloud做云端一体开发。
-                </td>
-                <td>uniapp开发微信小程序、uniCloud云端一体开发</td>
-                <td>无</td>
-                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>
-            </tr>
-            <tr>
-                <td>后端</td>
-                <td>hyshare网站后端，利用django+restframeworkAPI框架提供接口，实现前后端分离。</td>
-                <td>django3、restframework、supervisor进程管理、redis缓存、nginx反向代理，习惯用ubuntu系统，会一些常见的linux命令和bash编程。</td>
-                <td>
-                    <a href="https://django.chuanyun101.com:9999/article/article/" target="_blank">https://django.chuanyun101.com:9999</a>
-                </td>
-                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>
-            </tr>
-            <tr>
-                <td>爬虫</td>
-                <td>爬虫毕业设计。这是接的一单私活儿，给某个同学做的爬虫毕业设计。对一些网站用爬虫，实现账号注销功能，用python的tkinter框架实现GUI可视化界面。</td>
-                <td>python、多线程、requests爬虫、tkinter实现GUI界面</td>
-                <td>无</td>
-                <td><a href=">https://github.com/aplot249/" target="_blank">点我访问</a></td>
-            </tr>
-        </table>
+        <div class="content">
+            <div class="item">
+                <span>网站前端项目1</span>
+                <span><a href="javascrit:void(0);">源码链接</a></span>
+                <div>
+                    该项目实现的有用户注册、登录，发邮件、重置密码、文章增删改查、css移动端、pc端响应式布局。
+                    Vue3(vue-router、vuex)、axios(Promise)、css实现移动端和pc端响应式布局
+                </div>
+            </div>
+            <div class="item">
+                <span class="title">网站前端项目2</span>
+                <span class="link"><a href="javascrit:void(0);">源码链接</a></span>
+                <div>
+                    利用vue3+vant组件库实现移动端界面，呈现文章，视频内容，提交删除评论。
+                    Vue3(vue-router、vuex)、axios(Promise)、Vant组件库，利用腾讯云cos进行存储视频
+                </div>
+            </div>
+            <div class="item">
+                <span>签到抽奖界面</span>
+                <span><a href="javascrit:void(0);">源码链接</a></span>
+                <div>
+                    这是做一个签到抽奖界面。根据已有的psd的图片素材，利用css实现图片呈现的移动端布局效果，对用户点击按钮绑定响应事件。css flex布局，移动端布局。
+                </div>
+            </div>
+            <div class="item">
+                <span>uniapp开发小程序</span><span><a href="javascrit:void(0);">源码链接</a></span>
+                <div>
+                    这是现在正在做的一个项目，实现微信登录，文章、视频增删改查，留言评论功能，使用官方提供的uni-starter、uni-admin结合uniCloud做云端一体开发。
+                </div>
+            </div>
+            <div class="item">
+                <span>网站项目1的后端</span><span><a href="javascrit:void(0);">源码链接</a></span>
+                <div>
+                    利用django+restframeworkAPI框架提供接口，实现前后端分离。django3、restframework、supervisor进程管理、redis缓存、nginx反向代理，习惯用ubuntu系统，会一些常见的linux命令和bash编程。
+                </div>
+            </div>
+            <div class="item">
+                <span>爬虫毕业设计</span><span><a href="javascrit:void(0);">源码链接</a></span>
+                <div>
+                    这是给某个同学做的爬虫毕业设计。对一些网站用爬虫，实现账号注销功能，用python的tkinter框架实现GUI可视化界面。
+                    python、多线程、requests爬虫、tkinter实现GUI界面
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="section5">
@@ -190,6 +260,6 @@
             <li>已打算未来长期从事计算机编程相关行业，望得到在贵公司实习机会。</li>
         </ul>
     </div>
-</div>
+</>
 </body>
 </html>
